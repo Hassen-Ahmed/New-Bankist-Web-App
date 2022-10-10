@@ -1,0 +1,115 @@
+.home-page {
+  border-bottom: solid 1.5px rgba(128, 128, 128, 0.15);
+  width: 100%;
+  .home-page-container {
+    display: flex;
+    padding: 0 15%;
+    justify-content: space-around;
+    align-items: center;
+
+    width: 100vw;
+    height: 95vh;
+  }
+
+  .home-text-container {
+    color: rgb(136, 136, 136);
+    width: 50%;
+
+    h1 {
+      font-size: 5rem;
+      color: rgb(78, 78, 78);
+
+      .home-span {
+        display: inline-block;
+        transform: skewX(-15deg);
+        padding-left: 1rem;
+        margin-left: -2rem;
+        background-image: linear-gradient(
+          to right bottom,
+          rgb(185, 241, 185),
+          rgb(102, 231, 102)
+        );
+      }
+    }
+    h2 {
+      font-size: 2.5rem;
+      margin: 1rem auto;
+    }
+
+    .home-btn {
+      margin-top: 6rem;
+      button {
+        font-size: 1.4rem;
+        font-weight: 300;
+        color: rgb(53, 207, 53);
+        background-color: transparent;
+        border: none;
+        border-bottom: solid 1.5px rgb(53, 207, 53);
+        padding-bottom: 0.3rem;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .home-img {
+    width: 35%;
+    height: 35%;
+    margin-top: -15rem;
+
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+//////////////////.////////////
+// media query
+
+@media screen and (max-width: 900px) {
+  .home-page {
+    width: 100%;
+    .home-page-container {
+      width: 100%;
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: center;
+      padding: 6rem;
+    }
+
+    .home-text-container {
+      width: 100%;
+      h1 {
+        line-height: 2;
+        margin-bottom: 3rem;
+      }
+
+      .home-btn {
+        margin-top: 3rem;
+        button {
+          font-size: 1.6rem;
+          font-weight: 300;
+          color: rgb(53, 207, 53);
+          background-color: transparent;
+          border: none;
+          border-bottom: solid 1.5px rgb(53, 207, 53);
+          padding-bottom: 0.3rem;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .home-img {
+      width: 100%;
+      height: 40%;
+      margin-top: -5rem;
+      margin-bottom: 4rem;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}

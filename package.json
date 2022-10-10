@@ -1,0 +1,17 @@
+{
+  "name": "bankist",
+  "version": "1.0.0",
+  "description": "bankist website development base on Jonas Schm.. lecture.",
+  "main": "index.js",
+  "scripts": {
+    "sassComp": "node-sass scss/main.scss css/style.css -w"
+  },
+  "keywords": [
+    "bankist"
+  ],
+  "author": "hassen",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^7.0.3"
+  }
+}

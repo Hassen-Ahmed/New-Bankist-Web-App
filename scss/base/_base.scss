@@ -1,0 +1,62 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+@media screen and (max-width: 1023px) {
+  html {
+    font-size: 50%;
+    overflow-x: hidden;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  html {
+    font-size: 40%;
+    overflow-x: hidden;
+  }
+}
+
+body {
+  font-family: "Noto Sans Mono", monospace;
+  background-color: rgb(242, 242, 242);
+  width: 100vw;
+  overflow-x: hidden;
+}
+.headings {
+  opacity: 0;
+}
+
+@media screen and (max-width: 900px) {
+  .headings {
+    opacity: 1;
+  }
+}
+
+.heading-anim {
+  opacity: 1;
+  display: block;
+  animation-name: headingsAnim;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+}
+
+@keyframes headingsAnim {
+  0% {
+    opacity: 0;
+    transform: translateY(5rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0rem);
+  }
+}
